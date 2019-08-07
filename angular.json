@@ -23,6 +23,11 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",        
+              "src/assets/fonts/fontAwesome/css/all.min.css",
+              "src/assets/fonts/fontAwesome/css/fontawesome.min.css",
+              "src/assets/fonts/fontAwesome/css/brands.min.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
             "scripts": []

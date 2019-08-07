@@ -1,0 +1,39 @@
+
+hr {
+    border-color: #222121;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  footer.footer {
+    background-color: var(--grey);
+  }
+  .footer h3 {
+    color: #fff;
+    font-size: 24px;
+   font-family: var(--montserrat);
+   margin-bottom: 1.5rem;
+  }
+  .footer a {
+    color: #bababa;
+    font-family: var(--montserrat);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: .5rem;
+    display: block;
+    cursor: pointer;
+  }
+  .footer_social .social-media{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer_social .social-media li{
+    margin: 0rem 0.3rem;
+  }
+  .footer_social .social-media li:last-child{
+    margin-right: 0;
+  }
+  .footer_social .social-media li a{
+    font-size: 24px;
+    line-height: 30px;
+  }
