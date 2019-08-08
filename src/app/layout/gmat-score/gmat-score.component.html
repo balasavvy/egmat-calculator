@@ -1,0 +1,56 @@
+<section id="gmatContainer" class="p20">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="heading text-uppercase">Calculate GMAT Score</h2>
+        <div class="formContainer">
+          <form class="float-form" [formGroup]="gmatForm" (ngSubmit)=onSubmit()>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Quant</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="form-control-placeholder" for="">Current</label>
+                                <input  class=" " formControlName="uName" required>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="form-control-placeholder" for="">Target</label>
+                                <input  class=" " formControlName="uName1" required>
+                              </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-6">
+                    <h4>Verbal</h4>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="form-control-placeholder" for="">Current</label>
+                                <input  class=" " formControlName="uName2" required>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="form-control-placeholder" for="">Target</label>
+                                <input  class=" " formControlName="uName3" required>
+                              </div>
+                        </div>
+                    </div>
+                   
+                </div> 
+                <div class="col">
+                    <div class="buttons text-center">
+                        <button class="btn bg--prime border-radius-0 text-white">Submit</button>
+                      </div>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
