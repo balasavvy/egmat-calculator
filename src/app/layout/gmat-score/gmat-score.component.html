@@ -12,13 +12,29 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label class="form-control-placeholder" for="">Current</label>
-                                <input  class=" " formControlName="uName" required>
+                                <input  [ngClass]="{
+                                  'has-danger':(gmatForm.get('current_Q').invalid && gmatForm.get('current_Q').touched) || (gmatForm.get('current_Q').invalid && gmatForm.get('current_Q').dirty),
+                                  'has-success':gmatForm.get('current_Q').valid && gmatForm.get('current_Q').dirty}" class=" " formControlName="current_Q" required>
+                                <div *ngFor="let validation of validation_messages.current_Q">
+                                  <p class="error-message control-label" *ngIf="gmatForm.get('current_Q').hasError(validation.type) &&
+                                  (gmatForm.get('current_Q').dirty || gmatForm.get('current_Q').touched)">                      
+                                      {{ validation.message }}
+                                  </p>
+                                </div>
                               </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
                                 <label class="form-control-placeholder" for="">Target</label>
-                                <input  class=" " formControlName="uName1" required>
+                                <input [ngClass]="{
+                                  'has-danger':(gmatForm.get('target_Q').invalid && gmatForm.get('target_Q').touched) || (gmatForm.get('target_Q').invalid && gmatForm.get('target_Q').dirty),
+                                  'has-success':gmatForm.get('target_Q').valid && gmatForm.get('target_Q').dirty}" class=" " formControlName="target_Q" required>
+                                <div *ngFor="let validation of validation_messages.target_Q">
+                                  <p class="error-message control-label" *ngIf="gmatForm.get('target_Q').hasError(validation.type) &&
+                                  (gmatForm.get('target_Q').dirty || gmatForm.get('target_Q').touched)">                      
+                                      {{ validation.message }}
+                                  </p>
+                                </div>
                               </div>
                         </div>
                     </div>
@@ -30,13 +46,29 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label class="form-control-placeholder" for="">Current</label>
-                                <input  class=" " formControlName="uName2" required>
+                                <input [ngClass]="{
+                                  'has-danger':(gmatForm.get('current_V').invalid && gmatForm.get('current_V').touched) || (gmatForm.get('current_V').invalid && gmatForm.get('current_V').dirty),
+                                  'has-success':gmatForm.get('current_V').valid && gmatForm.get('current_V').dirty}" class=" " formControlName="current_V" required>
+                                <div *ngFor="let validation of validation_messages.current_V">
+                                  <p class="error-message control-label" *ngIf="gmatForm.get('current_V').hasError(validation.type) &&
+                                  (gmatForm.get('current_V').dirty || gmatForm.get('current_V').touched)">                      
+                                      {{ validation.message }}
+                                  </p>
+                                </div>
                               </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
                                 <label class="form-control-placeholder" for="">Target</label>
-                                <input  class=" " formControlName="uName3" required>
+                                <input [ngClass]="{
+                                  'has-danger':(gmatForm.get('target_V').invalid && gmatForm.get('target_V').touched) || (gmatForm.get('target_V').invalid && gmatForm.get('target_V').dirty),
+                                  'has-success':gmatForm.get('target_V').valid && gmatForm.get('target_V').dirty}" class=" " formControlName="target_V" required>
+                                <div *ngFor="let validation of validation_messages.target_V">
+                                  <p class="error-message control-label" *ngIf="gmatForm.get('target_V').hasError(validation.type) &&
+                                  (gmatForm.get('target_V').dirty || gmatForm.get('target_V').touched)">                      
+                                      {{ validation.message }}
+                                  </p>
+                                </div>
                               </div>
                         </div>
                     </div>
@@ -51,6 +83,9 @@
           </form>
         </div>
       </div>
+    </div>
+    <div class="row">
+      {{fieldValues | json}}
     </div>
   </div>
 </section>

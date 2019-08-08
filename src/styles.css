@@ -20,6 +20,18 @@ html {
   color: #666666;
   line-height: 2rem;
 }
+.has-success {
+  border-color: #5cb85c;
+}
+.has-danger {
+  border-color: #d9534f;
+}
+.has-warning  {
+  border-color: #f0ad4e;
+}
+*:focus {
+  outline: none;
+ }
 u {
   text-decoration-skip-ink: none;
 }

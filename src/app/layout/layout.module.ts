@@ -26,12 +26,11 @@ import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS, HttpHeaders } from '@a
   imports: [
     CommonModule,
     BrowserModule,
-   // HttpModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     LayoutRoutingModule,
-     BrowserAnimationsModule, // required animations module
+     BrowserAnimationsModule,
     // ToastrModule.forRoot({
     //   timeOut: 2000,
     //   positionClass: 'toast-top-right',
