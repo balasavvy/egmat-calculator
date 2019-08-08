@@ -21,17 +21,21 @@ html {
   line-height: 2rem;
 }
 .has-success {
-  border-color: #5cb85c;
+  border-color: #5cb85c !important;
 }
 .has-danger {
-  border-color: #d9534f;
+  border-color: #d9534f !important;
 }
 .has-warning  {
-  border-color: #f0ad4e;
+  border-color: #f0ad4e !important;
 }
 *:focus {
-  outline: none;
+  outline: none;  
  }
+ input:focus {
+  border: 1px solid #cccccc;
+ }
+ textarea, input { outline: none;     border: 1px solid #cccccc;}
 u {
   text-decoration-skip-ink: none;
 }

@@ -1,0 +1,16 @@
+
+.progress {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #eceeef;
+    border-radius: .25rem;
+}
+.progress {
+    margin-bottom: 10px;
+}

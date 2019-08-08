@@ -83,9 +83,10 @@
           </form>
         </div>
       </div>
-    </div>
-    <div class="row">
-      {{fieldValues | json}}
-    </div>
+    </div>    
   </div>
 </section>
+<app-progress-bar></app-progress-bar>
+<ng-container *ngIf="progressBar">      
+  <app-scores [progressBarParams]="progressBarParams"></app-scores>
+</ng-container>

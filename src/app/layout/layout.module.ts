@@ -11,6 +11,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS, HttpHeaders } from '@angular/common/http';
+import { ScoresComponent } from './gmat-score/scores/scores.component';
+import { ProgressBarComponent } from './shared/progress-bar/progress-bar.component';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -18,7 +20,9 @@ import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS, HttpHeaders } from '@a
     HeaderComponent,
     FooterComponent,
     SliderComponent,
-    GmatScoreComponent
+    GmatScoreComponent,
+    ScoresComponent,
+    ProgressBarComponent
   ],
   exports: [
     LayoutComponent
