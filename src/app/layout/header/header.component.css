@@ -30,6 +30,9 @@ header {
     color: #fff;
     border-color: #fff;
   }
+  .nav-link.active{
+    font-weight: bold
+  }
   @media (min-width: 1200px) {
     li.nav-item {
       margin-right: 6px;

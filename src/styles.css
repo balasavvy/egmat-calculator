@@ -23,7 +23,12 @@ html {
 u {
   text-decoration-skip-ink: none;
 }
-
+.bg--prime {
+  background-color: var(--primeDarkColor);
+}
+.bg--carrot {
+  background-color: var(--carrot) !important;
+}
 .f-family-montserrat {
   font-family: var(--montserrat);
 }
@@ -45,4 +50,7 @@ u {
 
 .text-prime {
     color: var(--primeColor);
+  }
+  .p20{
+    padding:20px
   }
