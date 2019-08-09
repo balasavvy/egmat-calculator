@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-scores',
   templateUrl: './scores.component.html',
   styleUrls: ['./scores.component.css']
 })
-export class ScoresComponent implements OnInit {
+export class ScoresComponent implements OnInit ,OnChanges{
   @Input('progressBarParams') progressBarParams;
   totalScore: number;
   qScore: number;
@@ -13,9 +13,25 @@ export class ScoresComponent implements OnInit {
   vScore_t: number;
   qScore_t: number;
   totalScore_t: number;
-  constructor() { }
+  totalMaxScore: number;
+  quantMaxScore: number;
+  verbalMaxScore: number;
+  constructor() {
+    this.totalMaxScore =800;
+    this.quantMaxScore =60;
+    this.verbalMaxScore =60;
+   }
 
   ngOnInit() {
+    this.init()
+  }
+  
+  ngOnChanges(){
+    this.init();
+    
+  }
+
+  init(){
     if(this.progressBarParams){
       this.totalScore= this.progressBarParams.currentScore;      
       this.qScore= this.progressBarParams.quant_c;
@@ -24,7 +40,5 @@ export class ScoresComponent implements OnInit {
       this.vScore_t= this.progressBarParams.verbal_t;
       this.totalScore_t= this.progressBarParams.targetScore;  
     }
-    
   }
-
 }

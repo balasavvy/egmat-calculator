@@ -8,9 +8,38 @@
     font-size: .75rem;
     line-height: 1rem;
     text-align: center;
-    background-color: #eceeef;
+    background-color: #f5f5f5;
     border-radius: .25rem;
 }
 .progress {
     margin-bottom: 10px;
-}
+    position:relative;height:16px;
+        border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow:visible
+  }
+  
+  .progress-bar {
+    width: 0;
+    position:absolute;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 16px
+  }
+  .progress-bar.target{
+    background-color:#ffe28a;
+    z-index:9;
+  }
+  .progress-bar.current{
+    z-index:99;
+    background-color:#0fa2eb;
+  }
+  [data-rel="tootltip"]{
+    position: absolute;
+    color:val(--grey );
+    top:-16px;
+  }
+  [data-rel="tootltip"].bottom{
+      bottom:-16px !important;
+      top:unset
+  }

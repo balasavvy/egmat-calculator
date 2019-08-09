@@ -4,19 +4,19 @@
       <div class="col ">
         <h2>Total Score</h2>
         {{totalScore}}
-        <app-progress-bar></app-progress-bar>
+        <app-progress-bar [current]="totalScore" [target]="totalScore_t" [total] ="totalMaxScore"></app-progress-bar>
       </div>
     </div>
     <div class="row s_row">
       <div class="col-6 q_row">
         <h4>Quant Score</h4>
         {{qScore}}
-        <app-progress-bar></app-progress-bar>
+          <app-progress-bar [current]="qScore" [target]="qScore_t" [total] = "quantMaxScore"></app-progress-bar>
       </div>
       <div class="col-6 v_row">
         <h4>Verbal Score</h4>
         {{vScore}}
-        <app-progress-bar></app-progress-bar>
+        <app-progress-bar [current]="vScore" [target]="vScore_t" [total] ="verbalMaxScore"></app-progress-bar>
       </div>
     </div>
 </div>
