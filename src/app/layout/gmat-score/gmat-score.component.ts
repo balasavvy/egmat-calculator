@@ -18,10 +18,10 @@ export class GmatScoreComponent implements OnInit {
 
   ngOnInit() {
     this.gmatForm = this.formBuilder.group({
-      current_Q: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.MaxNumber])],
-      target_Q: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.MaxNumber])],
-      current_V: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.MaxNumber])],
-      target_V:['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.MaxNumber])],
+      current_Q: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.validScore])],
+      target_Q: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.validScore])],
+      current_V: ['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.validScore])],
+      target_V:['', Validators.compose([Validators.required,Validators.pattern('^-?[0-9]\\d*(\\.\\d{1,2})?$'),Validation.validScore])],
     });
   }
   get fields() {
@@ -74,24 +74,24 @@ export class GmatScoreComponent implements OnInit {
   }
   validation_messages = {
     'current_Q': [
-      { type: 'required', message: 'Current Field is required' } ,
+      { type: 'required', message: 'Current Score is required' } ,
       { type: 'pattern', message: 'Only Numbers are allowed' },
-      { type: 'MaxNumber', message: 'Score Must not exceed 60.' },
+      { type: 'validScore', message: 'Scores range from 0 – 60' },
     ],
     'target_Q': [
-      { type: 'required', message: 'Target Field is required' } ,
+      { type: 'required', message: 'Target Score is required' } ,
       { type: 'pattern', message: 'Only Numbers are allowed' },
-      { type: 'MaxNumber', message: 'Score Must not exceed 60.' },
+      { type: 'validScore', message: 'Scores range from 0 – 60' },
     ],
     'current_V': [
-      { type: 'required', message: 'Current Field is required' },
+      { type: 'required', message: 'Current Score is required' },
       { type: 'pattern', message: 'Only Numbers are allowed' },
-      { type: 'MaxNumber', message: 'Score Must not exceed 60.' }, 
+      { type: 'validScore', message: 'Scores range from 0 – 60' }, 
     ],
     'target_V': [
-      { type: 'required', message: 'Target Field is required' },
+      { type: 'required', message: 'Target Score is required' },
       { type: 'pattern', message: 'Only Numbers are allowed' },
-      { type: 'MaxNumber', message: 'Score Must not exceed 60.' }, 
+      { type: 'validScore', message: 'Scores range from 0 – 60' }, 
     ]
   };
 }

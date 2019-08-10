@@ -1,3 +1,64 @@
 #gmatContainer{
-    /* min-height: 300px */
+    padding:40px 20px
 }
+.banner1 .banner{
+    position: relative;
+    height: 200px;
+}
+.banner1 .banner::after{
+    content: "";
+    background-image: url('/assets/images/lib.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+}
+.banner1 .banner h1{
+    color:var(--white );
+    text-shadow: 2px 2px 2px #291818;
+}
+.submitBtn{
+    font-family: var(--gothamBook);
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 13px;
+}
+p.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    text-align: right;
+}
+p.error-message::before{
+    content:"*";
+
+}
+.gmat-form input{
+    text-indent: 5px
+}
+@media (min-width: 1200px) { 
+
+    .gmat-form label{
+        margin-right: 10px;
+        font-size: 18px
+    }
+    #gmatContainer h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 1px #cac5c5;
+
+    }
+    .submitBtn{
+        margin:20px 0px 0px;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    .gmat-form input{
+        float:right
+    }
+ }

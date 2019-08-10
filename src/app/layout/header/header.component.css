@@ -122,7 +122,6 @@ header {
     border: none;
     cursor: pointer;
     outline: none;
-    font-family: var(--montserrat);
   }
   
   .dropbtn:hover, .dropbtn:focus {

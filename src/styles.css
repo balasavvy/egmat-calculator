@@ -10,15 +10,23 @@
     --sans: 'Montserrat', sans-serif;
     --sohoRegular: 'SohoPro-Regular';
     --white      : #fff;
+    --btnBg:#0098db;
+    --gothamLight: 'Gotham-Light';
+    --gothamBook:'Gotham-Book';
   }
 
   body,
 html {
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family:  var(--gothamLight);
   font-weight: 400;
   color: #666666;
   line-height: 2rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: var(--btnBg);
+  border-color: var(--btnBg);
 }
 .has-success {
   border-color: #5cb85c !important;

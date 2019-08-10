@@ -14,6 +14,7 @@ export class ProgressBarComponent implements OnInit,OnChanges{
   tooltip: boolean;
   diffScore: number;
   bottomTip: boolean;
+  scoreDifference: number;
   constructor() { }
 
   ngOnInit() {
@@ -37,6 +38,7 @@ export class ProgressBarComponent implements OnInit,OnChanges{
   renderScores() {
    if(this.currentScore && this.targetScore){
     this.tooltip = false;
+    this.scoreDifference= Math.abs(this.currentScore - this.targetScore);
      setTimeout(()=>{    
       this.FinalCurrentScore= Math.round((100 * this.currentScore ) / this.totalMaxScore);
       this.FinaltargetScore= Math.round((100 * this.targetScore ) / this.totalMaxScore) ; 

@@ -1,10 +1,20 @@
-<section id="gmatContainer" class="p20">
+<section class="topBanner">
+  <div class="banner1">
+      <div class="banner d-flex justify-content-center align-items-center soho-r">
+        <h1>
+          CALCULATE GMAT SCORE
+        </h1>
+      </div>
+  </div>
+</section>
+<section id="gmatContainer">
   <div class="container">
     <div class="row">
       <div class="col">
         <h2 class="heading text-uppercase">Calculate GMAT Score</h2>
+        <p>Enter the current and target scores of both Verbal and Quantitative .Your scaled scores should range from 0-60.</p>
         <div class="formContainer">
-          <form class="float-form" [formGroup]="gmatForm" (ngSubmit)=onSubmit()>
+          <form class="gmat-form" [formGroup]="gmatForm" (ngSubmit)=onSubmit()>
             <div class="row">
                 <div class="col-6">
                     <h4>Quant</h4>
@@ -76,7 +86,7 @@
                 </div> 
                 <div class="col">
                     <div class="buttons text-center">
-                        <button class="btn bg--prime border-radius-0 text-white">Submit</button>
+                        <button class="btn btn-primary submitBtn border-radius-0 text-white">Submit and Refresh</button>
                       </div>
                 </div>
             </div>

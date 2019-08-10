@@ -11,12 +11,10 @@ hr {
   .footer h3 {
     color: #fff;
     font-size: 24px;
-   font-family: var(--montserrat);
    margin-bottom: 1.5rem;
   }
   .footer a {
     color: #bababa;
-    font-family: var(--montserrat);
     font-size: 14px;
     line-height: 22px;
     margin-bottom: .5rem;

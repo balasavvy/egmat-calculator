@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS, HttpHeaders } from '@angular/common/http';
 import { ScoresComponent } from './gmat-score/scores/scores.component';
 import { ProgressBarComponent } from './shared/progress-bar/progress-bar.component';
+import { CalculateScoreComponent } from './home/calculate-score/calculate-score.component';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -22,7 +23,8 @@ import { ProgressBarComponent } from './shared/progress-bar/progress-bar.compone
     SliderComponent,
     GmatScoreComponent,
     ScoresComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    CalculateScoreComponent
   ],
   exports: [
     LayoutComponent

@@ -3,7 +3,12 @@
   }
   .carousel-caption h1 {
     color: var(--primeDarkColor);
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .carousel-caption h3 {
+    color: var(--primeDarkColor);
+    font-size: 25px;
     font-weight: bold;
   }
   .carousel-caption .text p {

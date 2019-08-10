@@ -1,11 +1,12 @@
 import { FormControl } from '@angular/forms';
 let _maxScore =60;
+let _minScore =1;
 export class Validation {
-      static MaxNumber(fc1: FormControl){
+      static validScore(fc1: FormControl){
         let number = +fc1.value;
-       if(number > _maxScore){
+       if(fc1.value && (number > _maxScore || number < _minScore)){
         return {
-            MaxNumber : true
+            validScore : true
         } 
        }else{
         return null

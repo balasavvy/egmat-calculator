@@ -1,3 +1,22 @@
 .t_row{
     background-color: #fafafa
 }
+.s_row{
+    background-color: #fff
+}
+#gmatGraphTotal h2{
+}
+.scoreAttained{
+
+}
+@media (min-width: 1200px) { 
+    #gmatGraphTotal h2{
+        font-size: 24px
+    }
+    .scoreAttained{
+        font-size: 30px
+    }
+    #gmatGraphParts h4{
+        font-size: 18px;
+    }
+}
