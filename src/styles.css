@@ -13,6 +13,7 @@
     --btnBg:#0098db;
     --gothamLight: 'Gotham-Light';
     --gothamBook:'Gotham-Book';
+    --latoLight: 'latolight';
   }
 
   body,
@@ -22,6 +23,9 @@ html {
   font-weight: 400;
   color: #666666;
   line-height: 2rem;
+}
+b{
+  color:#404040
 }
 .btn-primary {
   color: #fff;
@@ -77,4 +81,7 @@ u {
   }
   .p20{
     padding:20px
+  }
+  .mt20{
+    margin-top: 20px
   }

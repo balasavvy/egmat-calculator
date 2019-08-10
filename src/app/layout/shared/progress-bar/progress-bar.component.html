@@ -1,13 +1,22 @@
-<div class="progress">
+<div class="progress" [ngClass]="[bottomTip ? 'bottom' : '']">
   <div class="progress-bar target " [style.width]="FinaltargetScore + '%'" role="progressbar"></div>
   <div class="progress-bar current"[style.width]="FinalCurrentScore + '%'"  role="progressbar"></div> 
-  <div *ngIf="tooltip" data-rel="tootltip" class="currentTip" [style.right]="100-FinalCurrentScore + '%'">
-    {{currentScore  }}
+  <div *ngIf="tooltip" data-rel="tootltip" class="currentTip">
+   
+    <div class="marker" [style.left]="FinalCurrentScore  + '%' ">
+        <p>{{currentScore}}</p>
+        <div class="marker_f"></div>
+      </div>
   </div>
-  <div *ngIf="tooltip" [ngClass]="[bottomTip ? 'bottom' : '']" data-rel="tootltip"  [style.right]="100-FinaltargetScore + '%'" class="targetTip">
-    {{targetScore}}
+  <div *ngIf="tooltip" [ngClass]="[bottomTip ? 'bottom' : '']" data-rel="tootltip"   class="targetTip">
+       <div class="marker" [style.left]="FinaltargetScore  + '%' ">
+        <p>{{targetScore}}</p>
+        <div class="marker_f"></div>
+      </div>
   </div>
   <div *ngIf="!bottomTip && diffScore" class="difference"  [style.left]=" FinalCurrentScore + diffScore/2 + '%'">+{{scoreDifference}}</div>
   <div *ngIf="bottomTip && diffScore" class="difference"  [style.left]=" FinaltargetScore + '%'">+{{scoreDifference}}</div>
-  
-</div>
+ </div>
+<div class="message">
+    <p [innerHTML]="message"></p>
+  </div>

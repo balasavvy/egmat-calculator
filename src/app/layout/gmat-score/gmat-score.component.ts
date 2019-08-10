@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl } from '@angular/forms';
 import { Validation } from '../validation.service';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-gmat-score',
   templateUrl: './gmat-score.component.html',
@@ -53,6 +53,9 @@ export class GmatScoreComponent implements OnInit {
     this.progressBar =  true;
     this.progressBarParams = params;
     this.gmatForm.reset();
+    $('html, body').animate({
+      'scrollTop' : $("#progressGraph").offset().top 
+  });
   }
  
   getTargetScore(quant_t: any, verbal_t: any) {

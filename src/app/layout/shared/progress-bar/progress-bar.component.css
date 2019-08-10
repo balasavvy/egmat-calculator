@@ -13,16 +13,18 @@
     margin: 40px 0px 15px;
     position:relative;
     height:16px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
     overflow:visible
   }
-  
+  .progress.bottom{
+    margin: 45px 0px 35px;
+  }
   .progress-bar {
     width: 0;
     position:absolute;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
     height: 16px
   }
   .progress-bar.target{
@@ -33,17 +35,60 @@
     z-index:99;
     background-color:#0fa2eb;
   }
-  [data-rel="tootltip"]{
+  [data-rel="tootltip"] .marker{
     position: absolute;
-    color:val(--grey );
-    top:-16px;
+    color:var(--grey );
+    top:-35px;
+    margin-left: -14px;
+    min-width: 25px;
   }
-  [data-rel="tootltip"].bottom{
-      bottom:-16px !important;
+  [data-rel="tootltip"].bottom .marker{
+      bottom:-40px !important;
       top:unset
   }
   .difference{
     top: 2px;
     z-index: 999;
     position : absolute;
+  }
+  .message {
+    padding: 10px 0px 0px;
+    font-family: var(--latoLight)
+}
+.message p{
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a6a6a6;
+}
+.marker_f{
+  height:12px;
+}
+.currentTip .marker_f{
+background-image: url("/assets/images/current.png");
+background-position: 10px;
+background-repeat: no-repeat
+}
+.targetTip .marker_f{
+  background-image: url("/assets/images/target.png");
+  background-position: 10px;
+  background-repeat: no-repeat;  
+}
+[data-rel="tootltip"].bottom  .marker_f{
+  -webkit-transform: rotateZ(180deg); 
+  transform: rotateZ(180deg);
+  
+}
+[data-rel="tootltip"].bottom  .marker{
+  display: flex;
+  flex-direction: column-reverse;
+}
+[data-rel="tootltip"].bottom  .marker p{
+  margin:5px 0 0 0
+}
+  .marker p{
+    margin:0 0 5px;
+    font-size: 14px;
+    color: #bfbfbf;
+    
   }

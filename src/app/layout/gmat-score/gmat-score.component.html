@@ -96,6 +96,8 @@
     </div>    
   </div>
 </section>
-<ng-container *ngIf="progressBar">      
-  <app-scores [progressBarParams]="progressBarParams"></app-scores>
-</ng-container>
+<div id="progressGraph">
+  <ng-container *ngIf="progressBar">      
+    <app-scores [progressBarParams]="progressBarParams"></app-scores>
+  </ng-container>
+</div>
