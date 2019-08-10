@@ -16,7 +16,7 @@
     --latoLight: 'latolight';
   }
 
-  body,
+body,
 html {
   font-size: 14px;
   font-family:  var(--gothamLight);
@@ -75,13 +75,12 @@ u {
 .font-size-14 {
   font-size: 14px;
 }
-
 .text-prime {
     color: var(--primeColor);
   }
-  .p20{
-    padding:20px
-  }
-  .mt20{
-    margin-top: 20px
-  }
+.p20{
+  padding:20px
+}
+.mt20{
+  margin-top: 20px
+}

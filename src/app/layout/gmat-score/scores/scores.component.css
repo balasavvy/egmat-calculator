@@ -1,25 +1,25 @@
-.t_row{
-    background-color: #fafafa
+.t_row {
+  background-color: #fafafa
 }
-.s_row{
-    background-color: #fff
-}
-#gmatGraphTotal h2{
-}
-.scoreAttained{
 
+.s_row {
+  background-color: #fff
 }
-@media (min-width: 1200px) { 
-    #gmatGraphTotal h2{
-        font-size: 24px
-    }
-    .scoreAttained{
-        font-size: 30px
-    }
-    #gmatGraphParts h4{
-        font-size: 18px;
-    }
-    .q_row {
-        border-right: 1px solid #f2f2f2;
-    }
+
+@media (min-width: 1200px) {
+  #gmatGraphTotal h2 {
+    font-size: 24px
+  }
+
+  .scoreAttained {
+    font-size: 30px
+  }
+
+  #gmatGraphParts h4 {
+    font-size: 18px;
+  }
+
+  .v_row {
+    border-left: 1px solid #f2f2f2;
+  }
 }

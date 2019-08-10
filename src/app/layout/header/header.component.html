@@ -1,83 +1,88 @@
-<header><nav class="navbar navbar-expand-lg navbar-dark nav__block-top px-sm-0 py-0">
-  <div class="container">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark nav__block-top px-sm-0 py-0">
+    <div class="container">
       <a class="navbar-brand soho-r" routerLink="/">
         Logo
       </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav1" aria-controls="nav1"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="nav1">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 social-media">
-      
-        <li class="nav-item">
-          <div class="social_cont">
-            <a class="social" href="JavaScript:void(0);" >
-              <span>
-                <i class="fab fa-facebook-f"></i>
-            </span>
-          </a>                    
-          </div>
-        </li>
-        <li class="nav-item">
+      <div class="collapse navbar-collapse" id="nav1">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 social-media">
+
+          <li class="nav-item">
             <div class="social_cont">
-              <a class="social" href="JavaScript:void(0);" >
+              <a class="social" href="JavaScript:void(0);">
                 <span>
-                  <i class="fab fa-linkedin-in"></i>
-              </span>
-            </a>                    
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </a>
             </div>
           </li>
           <li class="nav-item">
-              <div class="social_cont">
-                <a class="social" href="JavaScript:void(0);" >
-                  <span>
-                    <i class="fab fa-twitter"></i>
+            <div class="social_cont">
+              <a class="social" href="JavaScript:void(0);">
+                <span>
+                  <i class="fab fa-linkedin-in"></i>
                 </span>
-              </a>                    
-              </div>
+              </a>
+            </div>
           </li>
           <li class="nav-item">
-                <div class="social_cont">
-                  <a class="social" href="JavaScript:void(0);" >
-                    <span>
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                </a>                    
-                </div>
+            <div class="social_cont">
+              <a class="social" href="JavaScript:void(0);">
+                <span>
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a>
+            </div>
           </li>
           <li class="nav-item">
-              <div class="social_cont">
-                <a class="social" href="JavaScript:void(0);" >
-                  <span>
-                    <i class="fab fab fa-google-plus-g"></i>
+            <div class="social_cont">
+              <a class="social" href="JavaScript:void(0);">
+                <span>
+                  <i class="fab fa-youtube"></i>
                 </span>
-              </a>                    
-              </div>
+              </a>
+            </div>
           </li>
-            
-      </ul>
-    </div>
-  </div>
-</nav>
+          <li class="nav-item">
+            <div class="social_cont">
+              <a class="social" href="JavaScript:void(0);">
+                <span>
+                  <i class="fab fab fa-google-plus-g"></i>
+                </span>
+              </a>
+            </div>
+          </li>
 
-<nav class="navbar navbar-expand-lg navbar-dark nav__block px-sm-0 py-0">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">       
-        <li class="nav-item">
-          <a class="nav-link"  [routerLinkActive]="['active']" routerLink="home" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"  [routerLinkActive]="['active']"  [routerLink]="['gmat-score']" [routerLinkActiveOptions]="{ exact: true }">Gmat Score</a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark nav__block px-sm-0 py-0">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" routerLink="home"
+              [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['gmat-score']"
+              [routerLinkActiveOptions]="{ exact: true }">Gmat Score</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>

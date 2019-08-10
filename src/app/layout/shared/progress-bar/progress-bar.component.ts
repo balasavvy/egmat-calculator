@@ -28,11 +28,10 @@ export class ProgressBarComponent implements OnInit,OnChanges{
     this.renderScores();
     
   }
-  _difFinder(currentScore: any, targetScore: any) {
-   
+  _difFinder(currentScore: any, targetScore: any) {   
     if(currentScore && targetScore){
       this.diffScore =Math.abs(currentScore - targetScore); 
-     if(this.diffScore < 10){
+     if(this.diffScore < 5){
        this.bottomTip = true;
      }else{
       this.bottomTip = false;
