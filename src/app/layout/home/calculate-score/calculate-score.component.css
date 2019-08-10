@@ -1,0 +1,14 @@
+section.scoreCalculator {
+    background-color: var(--primeColor);
+    color: #fff;
+    padding: 20px 0px;
+}
+.scoreCalculator h2{
+    padding-bottom: 20px
+}
+.scoreCalculator p{
+    margin:0;
+    line-height: 20px;
+    color:#cec8c8;
+    font-family: var(--sohoRegular);
+}
