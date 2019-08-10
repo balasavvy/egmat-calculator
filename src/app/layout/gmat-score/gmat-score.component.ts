@@ -55,7 +55,7 @@ export class GmatScoreComponent implements OnInit {
     this.gmatForm.reset();
     $('html, body').animate({
       'scrollTop' : $("#progressGraph").offset().top 
-  });
+  }); 
   }
  
   getTargetScore(quant_t: any, verbal_t: any) {
