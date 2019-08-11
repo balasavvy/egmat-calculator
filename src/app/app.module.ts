@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
+import { Validation } from './layout/validation.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { LayoutModule } from './layout/layout.module';
     BrowserModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [Validation],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

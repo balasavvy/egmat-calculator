@@ -1,0 +1,30 @@
+<section id="gmatGraphTotal" class="p20 t_row">
+  <div class="container">
+    <div class="row ">
+      <div class="col ">
+        <h2>Total Score</h2>
+        <p class="scoreAttained mt20">{{totalScore}}</p>
+        <app-progress-bar [flag]="'totalScore'" [current]="totalScore" [target]="totalScore_t" [total]="totalMaxScore">
+        </app-progress-bar>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gmatGraphParts" class="p20 s_row">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 col-sm-6 q_row">
+        <h4>Quant Score</h4>
+        <p class="scoreAttained mt20">Q{{qScore}}</p>
+        <app-progress-bar [flag]="'quant'" [current]="qScore" [target]="qScore_t" [total]="quantMaxScore">
+        </app-progress-bar>
+      </div>
+      <div class="col-12 col-sm-6 v_row">
+        <h4>Verbal Score</h4>
+        <p class="scoreAttained mt20">V{{vScore}}</p>
+        <app-progress-bar [flag]="'verbal'" [current]="vScore" [target]="vScore_t" [total]="verbalMaxScore">
+        </app-progress-bar>
+      </div>
+    </div>
+  </div>
+</section>

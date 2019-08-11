@@ -1,0 +1,41 @@
+.t_row {
+  background-color: #fafafa
+}
+
+.s_row {
+  background-color: #fff
+}
+
+@media (min-width: 1200px) {
+  #gmatGraphTotal h2 {
+    font-size: 24px
+  }
+
+  .scoreAttained {
+    font-size: 30px
+  }
+
+  #gmatGraphParts h4 {
+    font-size: 18px;
+  }
+
+  .v_row {
+    border-left: 1px solid #f2f2f2;
+  }
+}
+
+@media (max-width: 575px) {
+  .scoreAttained {
+    margin-top: 10px
+  }
+
+  .v_row {
+    margin-top: 20px
+  }
+
+  #gmatContainer,
+  #gmatGraphTotal,
+  #gmatGraphParts {
+    padding: 20px 5px
+  }
+}
