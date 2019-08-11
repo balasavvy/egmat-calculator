@@ -23,14 +23,19 @@
     border-left: 1px solid #f2f2f2;
   }
 }
-@media (max-width: 575px) { 
-  .scoreAttained{
+
+@media (max-width: 575px) {
+  .scoreAttained {
     margin-top: 10px
   }
-  .v_row{
-   margin-top: 20px
+
+  .v_row {
+    margin-top: 20px
   }
-  #gmatContainer,#gmatGraphTotal,#gmatGraphParts{
-    padding:20px 5px
+
+  #gmatContainer,
+  #gmatGraphTotal,
+  #gmatGraphParts {
+    padding: 20px 5px
   }
- }
+}
