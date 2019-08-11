@@ -29,24 +29,24 @@ export class GmatScoreComponent implements OnInit {
   }
   onSubmit(){
     if (this.gmatForm.valid) {
+    //getting field values
     this.fieldValues = {
       "quant_c":+this.fields.current_Q.value, 
       "quant_t":+this.fields.target_Q.value,
       "verbal_c":+this.fields.current_V.value,
       "verbal_t":+this.fields.target_V.value
       }    
-   this.calculateScore(this.fieldValues)   
-
+   this.calculateScore();
     }else {
       this.validateAllFormFields(this.gmatForm);
     }
   }
-  calculateScore(fieldValues) {
+  calculateScore() {
     this.CurrentScore = +this.getCurrentScore(this.fieldValues.quant_c,this.fieldValues.verbal_c);
     this.TargetScore = +this.getTargetScore(this.fieldValues.quant_t,this.fieldValues.verbal_t);
     if(this.CurrentScore &&  this.TargetScore){
       let params={ ...this.fieldValues,currentScore:this.CurrentScore,targetScore:this.TargetScore };
-      this.renderProgressTemplate(params)
+      this.renderProgressTemplate(params);//render template
     }
   }
   renderProgressTemplate(params) {
@@ -55,18 +55,18 @@ export class GmatScoreComponent implements OnInit {
     this.gmatForm.reset();
     $('html, body').animate({
       'scrollTop' : $("#progressGraph").offset().top 
-  }); 
+    });  //scroll to bar on submit
   }
  
   getTargetScore(quant_t: any, verbal_t: any) {
-    return 200 + (quant_t + verbal_t) * 5
+    return 200 + (quant_t + verbal_t) * 5 //target score
   }
   getCurrentScore(quant_c: any, verbal_c: any) {
-    return 200 + (quant_c + verbal_c) * 5
+    return 200 + (quant_c + verbal_c) * 5 //curret score
   }
   validateAllFormFields(formGroup: FormGroup) {
+    //check the valid fields
     Object.keys(formGroup.controls).forEach(field => {
-      console.log(field);
       const control = formGroup.get(field);
       if (control instanceof FormControl) {
         control.markAsTouched({ onlySelf: true });
@@ -76,6 +76,7 @@ export class GmatScoreComponent implements OnInit {
     });
   }
   validation_messages = {
+    //errror messages
     'current_Q': [
       { type: 'required', message: 'Current Score is required' } ,
       { type: 'pattern', message: 'Only Numbers are allowed' },

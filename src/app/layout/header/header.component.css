@@ -48,6 +48,9 @@ header {
   li.nav-item {
     margin-right: 6px;
   }
+  li.nav-item:last-child {
+    margin-right: 0 !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -72,7 +75,6 @@ header {
 
   .container {
     display: flex;
-    justify-content: flex-end;
   }
 
   button {
@@ -121,6 +123,16 @@ header {
     font-size: 30px;
     color: #fff;
   }
+
+  ul.social-media li {
+    width: 32px;
+    height: 32px;
+  }
+
+  .social_cont,
+  a.social {
+    font-size: 12px;
+  }
 }
 
 li.nav-item.ngx-selectli {
@@ -130,17 +142,19 @@ li.nav-item.ngx-selectli {
 .social_cont,
 a.social {
   color: #676d73;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 a.social.active {
   font-weight: bold;
 
 }
-
+.social-media{
+  flex-direction: row
+}
 ul.social-media li {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border: 2px solid #e8e8e8;
   border-radius: 100%;
   display: -webkit-box;

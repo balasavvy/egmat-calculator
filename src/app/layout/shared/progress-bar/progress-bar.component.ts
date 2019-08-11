@@ -29,6 +29,7 @@ export class ProgressBarComponent implements OnInit,OnChanges{
     
   }
   _difFinder(currentScore: any, targetScore: any) {   
+    //Conditions for displaying marker tip
     if(currentScore && targetScore){
       this.diffScore =Math.abs(currentScore - targetScore); 
      if(this.diffScore < 8){
@@ -51,10 +52,10 @@ export class ProgressBarComponent implements OnInit,OnChanges{
       this.high=false;
       this.low=true;
      }
-     this.renderMssage()
+     this.renderMessage() //render feedback msg
     }
   }
-  renderMssage() {
+  renderMessage() {
    let ScoreFlag= this.flag;
    switch(ScoreFlag) { 
     case "totalScore": { 
@@ -93,8 +94,7 @@ export class ProgressBarComponent implements OnInit,OnChanges{
       this.FinaltargetScore= Math.round((100 * this.targetScore ) / this.totalMaxScore) ; 
       setTimeout(()=>{
         this._difFinder(this.FinalCurrentScore,this.FinaltargetScore);
-      //  this.tooltip = true
-      },500)   
+      },500)   // <- timeout for smooth display
      });
    }
   }
