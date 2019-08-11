@@ -13,9 +13,9 @@
       <div class="marker_f"></div>
     </div>
   </div>
-  <div *ngIf="!bottomTip && diffScore" class="difference" [style.left]=" FinalCurrentScore + diffScore/2 + '%'">
+  <div *ngIf="!bottomTip && diffScore" class="difference c" [style.left]=" FinalCurrentScore + diffScore/2 -2 + '%'">
     +{{scoreDifference}}</div>
-  <div *ngIf="bottomTip && diffScore" class="difference" [style.left]=" FinaltargetScore + '%'">+{{scoreDifference}}
+  <div *ngIf="bottomTip && diffScore" class="difference t" [style.left]=" FinaltargetScore + '%'">+{{scoreDifference}}
   </div>
 </div>
 <div class="message">

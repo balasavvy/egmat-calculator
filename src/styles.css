@@ -84,3 +84,6 @@ u {
 .mt20{
   margin-top: 20px
 }
+.justify-flext-start {
+  justify-content: flex-start !important;
+}
